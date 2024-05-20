@@ -80,3 +80,43 @@ function trocarImagem() {
     imagem.src = "./img/homeArt1.svg"; 
   }
 }
+
+//Cabeçalho
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuHamburguer = document.getElementById('menuHamburguer');
+  const menuItemsMobile = document.getElementById('menuItemsMobile');
+
+  menuHamburguer.addEventListener('click', () => {
+    menuHamburguer.classList.toggle('menu-open');
+    menuItemsMobile.classList.toggle('menu-open');
+  });
+});
+
+//FORMULARIO
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formulario-contato");
+  const nome = document.getElementById("nome");
+  const email = document.getElementById("email");
+  const telefone = document.getElementById("telefone");
+  const mensagem = document.getElementById("mensagem");
+  const enviarBtn = document.getElementById("enviar");
+
+  enviarBtn.addEventListener("click", function () {
+    // Verifica se todos os campos estão preenchidos
+    if (nome.value && email.value && telefone.value && mensagem.value) {
+      // Simula o envio do formulário (pode ser substituído por uma chamada AJAX)
+      alert("Formulário enviado com sucesso!");
+      // Limpa os campos após o envio
+      form.reset();
+    } else {
+      // Caso algum campo não esteja preenchido, realça os campos inválidos
+      nome.reportValidity();
+      email.reportValidity();
+      telefone.reportValidity();
+      mensagem.reportValidity();
+    }
+  });
+});
+

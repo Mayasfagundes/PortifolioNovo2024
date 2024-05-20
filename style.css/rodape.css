@@ -6,6 +6,13 @@
 
 }
 
+.rodape__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
 .rodape__texto {
     margin: 1rem;
     color: var( --cinza-medio);
@@ -23,6 +30,28 @@
     color: var(--preto);
 
 }
+
+.rodape__icones {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rodape__icones-lista {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.rodape__icones-svg{
+    color: var(--lilas);
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
 
 @media screen and (max-width: 768px) {
     .rodape {
