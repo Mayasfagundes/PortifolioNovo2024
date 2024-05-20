@@ -99,16 +99,37 @@
     justify-content: center;
   }
 
-  
-
   .sobre__conteudo-texto {
     margin: 2rem;
     padding: 0;
   }
 
   .skils__itens{
-    width: 120px;
+    width: 100px;
+    height: 100px;
   }
+
+  .skils__img{
+    width: 40px;
+    height: 60px;
+
+  }
+
+  .skils__titulo-container{
+    font-size: 30px;
+  }
+  
+.skils__titulo {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Playfair";
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: var(--branco);
+  text-transform: uppercase;
+}
 
   .sobre__foto-principal{
     width: 220px;
