@@ -2,7 +2,6 @@
   align-items: center;
   justify-content: center;
 
-
 }
 
 .contato__conteudo {
@@ -19,84 +18,78 @@
   font-weight: 700;
   color: var(--branco);
   text-align: center;
-  margin: 2rem;
+  margin-top: 5rem;
 }
 
-form{
-  max-width: 500px;
-  margin: 0 auto;
+.contato__botoes {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
+  margin: 5rem;
 }
 
-form, input{
-  border: 0;
-}
-
-input, textarea{
-  width: 100%;
-  background-color: var(--cinza-medio) ;
-  padding: 20px 15px;
-  border-radius: 1rem;
-  border: 0;
-
-}
-
-textarea{
-  resize: none;
-  max-height: 8rem;
-}
-
-.btn-enviar{
-  margin-top: 2rem;
+.contato__itens {
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-
-
-}
-
-.btn-enviar button{
-  width: 100px;
-  height: 50PX;
-  background-color: var(--lilas);
-  color: var(--preto);
-  font-weight: 700;
-  font-size: 18px;
-  cursor: pointer;
+  background-color: #212121;
   border-radius: 1rem;
+  width: 6rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.contato__itens-texto {
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 18px;
 
 }
 
-.btn-enviar button:hover {
-  background-color: #A3C4FF;
-
+.icon {
+  width: 40px;
+  height: 40px;
+  color: var(--rosa);
+  margin-bottom: 0.5rem;
 
 }
 
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.contato__itens:nth-child(2){
+  transition-delay: 600ms;
+
+}
+
+.contato__conteudo :nth-child(3){
+  transition-delay: 800ms;
+
+}
+
+.contato__conteudo :nth-child(4){
+  transition-delay: 1000ms;
+
+}
 @media screen and (max-width: 768px) {
 
-.contatos__titulo{
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-}
+  .contato__texto {
+    font-size: 20px;
 
-.contato__texto{
-  font-size: 20px;
-  margin: 1rem;
-  padding: 0;
-}
+  }
 
-form{
-  max-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-}
+  .icon {
+    width: 45px;
+  }
 
-
+  .contato__botoes {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
