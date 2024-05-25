@@ -94,7 +94,7 @@
 
   
     <div class="home__imagem">
-        <img class="sobre__foto-principal hidden" src="./img/homeArt1.svg" alt="Foto de Mayara Fagundes" id="imagem" onmouseover="trocarImagem()" onmouseout="trocarImagem()">
+        <img class="home__foto-principal hidden" src="./img/homeArt1.svg" alt="Foto de Mayara Fagundes" id="imagem" onmouseover="trocarImagem()" onmouseout="trocarImagem()">
       </div>
 
   </section>
@@ -102,21 +102,16 @@
   <section class="sobre" id="sobre">
     <h1 class="sobre__conteudo-titulo Tcor1">Sobre mim</h1>
 
-    <div class="sobre__container">
-
-      <div class="sobre__foto">
-        <img class="sobre__foto-principal hidden" src="./img/imagem-home.jpeg" alt="Foto de Mayara Fagundes">
-      </div>
-
+    <div class="sobre__container">  
       <div class="sobre__conteudo hidden">
         <p class="sobre__conteudo-texto preto"> 
-          Olá! Me chamo Mayara e sou desenvolvedora de software com foco em Front-End. Possuo experiência em aplicações web responsivas com JavaScript e familiaridade com HTML, CSS, JavaScript, TypeScript, Figma, Bootstrap, SEO, Design Responsivo, UX, Git e GitHub.
+          Olá! Me chamo Mayara e sou desenvolvedora de software com foco em Front-End. Possuo familiaridade em aplicações web responsivas com JavaScript, HTML, CSS,TypeScript, Figma, Bootstrap, SEO, Design Responsivo, UX, Git e GitHub, Tello e Jira.<br><br>
 
-          Antes de me tornar desenvolvedora, atuei por 12 anos na área de atendimento, suporte e rotinas administrativas. Essas experiências me proporcionaram habilidades interpessoais valiosas, que agora aplico no desenvolvimento de software para trabalhar bem em equipe e comunicar ideias de forma clara e concisa.
+          Atuei por 12 anos na área de atendimento, suporte e rotinas administrativas. Essas experiências me proporcionaram habilidades interpessoais valiosas, que agora aplico no desenvolvimento de software para trabalhar bem em equipe e comunicar ideias de forma clara e concisa.<br><br>
          
-          Atualmente, estou cursando Engenharia de Software na Unicesumar, o que me permite aliar conhecimentos teóricos e práticos para aprimorar minhas habilidades como desenvolvedora. Tenho grande entusiasmo pela programação e pelo seu poder criativo, e estou sempre em busca de desenvolvimento pessoal e profissional.
+          Atualmente, estou cursando Engenharia de Software na Unicesumar, o que me permite aliar conhecimentos teóricos e práticos para aprimorar minhas habilidades como desenvolvedora. Tenho grande entusiasmo pela programação e pelo seu poder criativo, e estou sempre em busca de desenvolvimento pessoal e profissional.<br><br>
          
-          Se você deseja discutir possíveis oportunidades de colaboração ou tem alguma pergunta, sinta-se à vontade para entrar em contato comigo.
+          Se você deseja discutir possíveis oportunidades de colaboração ou tem alguma pergunta, sinta-se à vontade para entrar em contato comigo.<br>
         </p>
         
       </div>
@@ -128,19 +123,32 @@
 
       <div class="skils">
 
-        <div class="skils__itens hidden">
-          <p class="skils__titulo"> CSS</p>
-          <img class="skils__img" src="./img/css.svg" alt="CSS">
-        </div>
-
+        
         <div class="skils__itens hidden">
           <p class="skils__titulo"> HTML</p>
           <img class="skils__img" src="./img/HTML5 (1).svg" alt="CSS">
         </div>
 
         <div class="skils__itens hidden">
+          <p class="skils__titulo"> CSS</p>
+          <img class="skils__img" src="./img/css.svg" alt="CSS">
+        </div>
+
+        <div class="skils__itens hidden">
           <p class="skils__titulo"> Javascript</p>
           <img class="skils__img" src="./img/Javascript.svg" alt="CSS">
+        </div>
+
+        
+        <div class="skils__itens hidden">
+          <p class="skils__titulo"> TypeScript</p>
+          <img class="skils__img" src="./img/TypeScript.svg" alt="CSS">
+        </div>
+
+        
+        <div class="skils__itens hidden">
+          <p class="skils__titulo"> React</p>
+          <img class="skils__img" src="./img/React.svg" alt="CSS">
         </div>
 
         <div class="skils__itens hidden">
@@ -181,6 +189,28 @@
         </div>
       </div>
 
+      <div class="projetos__video" data-anime="right">
+        <img class="projetos__video__exibicao" src="" alt="">
+        <div class="projetos__info-conteudo">
+          <h3 class="projetos__subtitulo preto">Página Nutricionista</h3>
+
+          <p class="projetos__texto preto">Em andamento</p>
+          <a class="projetos__botao" href="https://pagina-andre.vercel.app/" target="_blank">Site</a>
+          <a class="projetos__botao" href="https://github.com/Mayasfagundes/PaginaAndre" class="btn2"
+            target="_blank">Código</a>
+        </div>
+      </div>
+
+      <div class="projetos__video" data-anime="left">
+        <img class="projetos__video__exibicao" src="" alt="">
+        <div class="projetos__info-conteudo">
+          <h3 class="projetos__subtitulo preto">TO-DO-LIST</h3>
+          <p class="projetos__texto preto"><br> Ainda em andamento </p>
+          <a class="projetos__botao" href=https://to-do-list-one-neon-92.vercel.app/ target="_blank">Site</a>
+          <a class="projetos__botao" href=https://github.com/Mayasfagundes/to-do-list class="btn2"
+            target="_blank">Código</a>
+        </div>
+      </div>
 
       <div class="projetos__video" data-anime="right">
         <img class="projetos__video__exibicao" src="img/gif meteora.gif" alt="">
@@ -241,15 +271,6 @@
     <div class="contato__conteudo">
       <p class="contato__texto preto">Tem uma pergunta, proposta ou apenas quer dizer olá? <br>Vá em frente.</p>
   
-      <!-- Formulário de contato -->
-      <form id="formulario-contato" class="contato__form">
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
-        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
-        <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-        <div class="btn-enviar"><button type="button" id="enviar">Enviar</button></div>
-      </form>
-      <!-- Fim do formulário de contato -->
     </div>
   </section>
   
